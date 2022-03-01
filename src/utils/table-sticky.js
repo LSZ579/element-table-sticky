@@ -35,9 +35,7 @@ export default {
   watch: {
     __opened(val) {
       console.log('收起展开')
-      this.$nextTick(() => {
-        this.setScrollXWidth()
-      })
+      this.setScrollXWidth()
     }
   },
   beforeDestroy() {
@@ -136,7 +134,7 @@ export default {
     setScrollXWidth() {
       let timer = setTimeout(() => {
         if (!this.parentDom) this.parentDom = document.getElementsByClassName(this.parent)
-        if(this.parentDom.length==0)return
+        if(this.parentDom.length==0) console.log(this.parentDom)
         let dom = this.parentDom[0].querySelector('.el-table__header')
         this.tableWidth = this.parentDom[0].querySelector('.el-table__header-wrapper').getBoundingClientRect().width
         this.headerWidth = dom.style.width
