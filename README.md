@@ -7,7 +7,8 @@
 2、由于考虑到使用keep-alive，所以每个表格组件都需要加一个唯一的class值，用于获取当前唯一的表格的dom
 3、**因为项目使用了vue2.0版本，考虑到便捷性，采用了mixins混入方案，只测试vue2.0，不建议使用全局混入**
 
-## 效果图
+## 效果图 
+在线预览地址：https://lsz579.github.io/element-table-sticky/
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/17224287eec2440ea1c899d459aaaff1.gif#pic_center)
 ## 使用方法
 1.设置滚动的节点
