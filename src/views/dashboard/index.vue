@@ -66,7 +66,7 @@ export default {
       input:''
     }
   },
-  mixins: [stacky],
+    mixins: [stacky],
   mounted() {
     this.tableData[0] = {}
     for (let i = 0; i < 40; i++) {
